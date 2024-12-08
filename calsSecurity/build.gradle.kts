@@ -5,15 +5,14 @@ plugins {
 }
 
 android {
-    namespace = "com.zefiroft.calslogging"
-    compileSdk = 35
+    namespace = "com.zefiroft.calssecurity"
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 24
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
-
         version = "1.0.0"
     }
 
@@ -32,10 +31,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
-    }
-
-    buildFeatures {
-        buildConfig = true
     }
 }
 
