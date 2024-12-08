@@ -39,6 +39,20 @@ android {
     }
 }
 
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.release
+                    groupId = 'com.zefiroft'
+            artifactId = 'calsLoggin'
+            version = '1.0.0'
+        }
+    }
+    repositories {
+        mavenLocal()  // Publicar en Maven Local
+    }
+}
+
 dependencies {
 
     implementation(libs.androidx.core.ktx)
