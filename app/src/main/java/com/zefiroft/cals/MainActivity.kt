@@ -12,19 +12,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.zefiroft.cals.ui.theme.CalsTheme
-import com.zefiroft.calslogging.logs.Log
 import com.zefiroft.calssecurity.Encrypt
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.logVerbose("HOLA", "Mi primer tag desde libreria jitpack :D")
-        Log.logVerbose(
-            "HOLA",
-            "ahora voy a encriptar esto con una libreria propia en jitpack: " + Encrypt.encryptString(
-                "HOLA"
-            )
-        )
+
         enableEdgeToEdge()
         setContent {
             CalsTheme {

@@ -14,7 +14,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
 
-        version = "1.0.0"
+        version = "1.0.1"
     }
 
     buildTypes {
@@ -36,20 +36,6 @@ android {
 
     buildFeatures {
         buildConfig = true
-    }
-}
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            from components.release
-                    groupId = 'com.zefiroft'
-            artifactId = 'calsLoggin'
-            version = '1.0.0'
-        }
-    }
-    repositories {
-        mavenLocal()  // Publicar en Maven Local
     }
 }
 
