@@ -49,4 +49,15 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 }
 
-group = "com.github.willianB"
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            afterEvaluate {
+                from(components["release"])
+                groupId = "com.github.willianB"
+                artifactId = "cals-log"
+                version = "1.0.0"
+            }
+        }
+    }
+}
