@@ -22,5 +22,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Cals"
 include(":app")
-//include(":calsLogging")
-include(":calsSecurity")
+include(":calsLogging")

@@ -52,8 +52,6 @@ android {
 
 dependencies {
 
-    //implementation(project(":calsLogging"))
-    implementation(project(":calsSecurity"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
